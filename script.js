@@ -22,7 +22,6 @@ var allChar = "";
 
 console.log(lowerCase,upperCase,numericPs,specialChar);
 
-
 //Gathering information from the user to define what the password will contain
 var lengthReq = prompt("How many characters will your password be? Enter a number between 8 and 128");
 var specialCharReq = confirm('Do you want special characters?');
@@ -30,16 +29,15 @@ var numericReq = confirm ('Do you want numeric characters?');
 var lowerCs = confirm (" Do you want your password to contain lower case letters?");
 var upperCs = confirm ("Do you want you password to contain upper case letters?");
 
-
 console.log(lengthReq,specialCharReq,numericReq,lowerCs,upperCs);
 
 function generatePassword() {
 
-
-
-
-
-}
+  // If password length is less than 8 or more than 128, send a message to redo
+  if (!(passwordLength >=8 || passwordLength <= 128)) {
+    alert ("Password length is incorrect, please select a password between 8 and 128 characters.")
+    return;
+  }
 
   //If using lowercase characters then push the characters into chartoUse
 
@@ -49,7 +47,20 @@ function generatePassword() {
 
   //If using number characters then push the characters into chartoUse
 
-  // 
+  // Declare a new "password' string "
+  var password = "";
+
+  //contine as long as i is less than <passwordlength; i++
+  
+//password.length < passwordlength then do the block of code 
+  while( password.length <passwordLength  ) {
+
+
+  }
+
+
+
+  }
 
 
   while(password.length < passwordLength) {}
