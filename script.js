@@ -18,6 +18,7 @@ var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var numericPs = '0123456789';
 var specialChar = '!\"#$%&';
+var allChar = "";
 
 console.log(lowerCase,upperCase,numericPs,specialChar);
 
@@ -33,12 +34,15 @@ var upperCs = confirm ("Do you want you password to contain upper case letters?"
 console.log(lengthReq,specialCharReq,numericReq,lowerCs,upperCs);
 
 function generatePassword() {
-if (passwordLength <8 || passwordLength >128) {
-  alert ("Password length should be between 8 and 128")
 
-} break
+
+if (allChar <8 || allChar >128 ) {
+  alert ("Password length should be between 8 and 128")}
+console.log (allChar);
+
 
 }
+
   //If using lowercase characters then push the characters into chartoUse
 
   //If using uppercase characters then push the characters into chartoUse
