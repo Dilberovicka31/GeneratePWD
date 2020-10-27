@@ -45,9 +45,13 @@ var upperCs = confirm ("Do you want you password to contain upper case letters?"
 
 
 
-if (!specialChar && !numericPs && !lowerCs && !upperCs) {
+if (!specialChar && !numericPs && !lowerCase && !upperCase) {
   alert ("Please include at least one criteria for your password!")
   return;
+}
+
+if (numericReq === true) {
+  numericReq.concat(numericPs)
 }
 
 
