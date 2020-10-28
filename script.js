@@ -16,7 +16,7 @@ function generatePassword() {
   //Gathering information from the user to define what the password will contain
 var passwordLength = prompt ("Please choose a password length between 8 and 128 characters.");
 // If password length is less than 8 or more than 128, send a message to redo
-if ((passwordLength >8) && (passwordLength < 128))  {
+if ((passwordLength >7) && (passwordLength < 128))  {
   var passLength = parseInt(passwordLength)
   
 // Gathering information from user regarding characters to use.
@@ -30,19 +30,19 @@ var passwordNew = "";
 if (!specialCharReq && !numericReq && !lowerCs && !upperCs ) {
   alert ("Please include at least one criteria for your password!")
 }
-//If the user chooses to use numeric characters is new password add it
+//If the user chooses to use numeric characters add it to the new password
 if (numericReq ) {
   newCharacters += numbers;
 }
-//If the user chooses to use special characters is new password add it
+//If the user chooses to use numeric characters add it to the new password
 if (specialCharReq ) {
   newCharacters += special;
 }
-//If the user chooses to use lower case characters is new password add it
+//If the user chooses to use lower case characters add it to the new password
 if (lowerCs ) {
   newCharacters += lowercase;
 }
-//If the user chooses to use upper case characters is new password add it
+//If the user chooses to use upper case characters add it to the new password
 if (upperCs ) {
   newCharacters += uppercase;
 }
