@@ -11,11 +11,11 @@ If user selects a password that is less than 8 or more than 128, gets an error m
 
 * After each confirmation users input is generated and concatenated into the new password.
 
-#Code screenshot : 
+# Code screenshot : 
  ![GeneratePWD](./Images/Code1.png)
  ![GeneratePWD](./Images/Code2.png)
 
- #Link to deployed application :
+ # Link to deployed application :
  https://dilberovicka31.github.io/GeneratePWD/
 
 
