@@ -54,31 +54,31 @@ if (!specialChar && !numericPs && !lowerCase && !upperCase) {
 //If the user chooses to use numeric characters is new password add it
 if (numericReq == true) {
 
-  passwordNew = passwordNew.concat(numericPs);
+  newCharacters = newCharacters.concat(numericPs);
 }
 
 
 //If the user chooses to use special characters is new password add it
 if (specialCharReq == true) {
 
-  passwordNew = passwordNew.concat(specialChar);
+  newCharacters = newCharacters.concat(specialChar);
 }
 
 //If the user chooses to use lower case characters is new password add it
 if (lowerCs == true) {
 
-  passwordNew = passwordNew.concat(lowerCase);
+  newCharacters = newCharacters.concat(lowerCase);
 }
 
 //If the user chooses to use upper case characters is new password add it
 
 if (upperCs == true) {
 
-  passwordNew = passwordNew.concat(upperCase);
+  newCharacters = newCharacters.concat(upperCase);
 }
 
-for (var i = 0; i < passwordNew.length; ++i) {
-  password += passwordNew(Math.floor(Math.random() * passwordNew.length));
+for (var i = 0; i < password.length; ++i) {
+  randomCharacter += newCharacters(Math.floor(Math.random() * password.length));
 }
 return passwordNew;
 
