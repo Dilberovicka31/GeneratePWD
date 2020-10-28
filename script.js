@@ -1,20 +1,26 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 generateBtn.addEventListener("click", writePassword);
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
+
 // Character set to choose the password from
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "0123456789";
   var special = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+
 function generatePassword() {
+
   //Gathering information from the user to define what the password will contain
 var passwordLength = prompt ("Please choose a password length between 8 and 128 characters.");
+
 // If password length is less than 8 or more than 128, send a message to redo
 if ((passwordLength >7) && (passwordLength < 128))  {
   var passLength = parseInt(passwordLength)
@@ -26,6 +32,7 @@ var lowerCs = confirm (" Do you want your password to contain lower case letters
 var upperCs = confirm ("Do you want you password to contain upper case letters?");
 var newCharacters = "";
 var passwordNew = "";
+
 // If no selection was made prompt the user to choose at least one of the requirements for new password
 if (!specialCharReq && !numericReq && !lowerCs && !upperCs ) {
   alert ("Please include at least one criteria for your password!")
